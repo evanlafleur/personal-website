@@ -1,0 +1,19 @@
+:root {
+    --skyblue: #1e90ff;
+    --pink: #ec058E;
+
+    --white: #fffbfc;
+    --gray: #292929;
+    --black: #010400;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+body {
+    background-color: var(--gray);
+    color: var(--skyblue);
+
+}
