@@ -9,8 +9,14 @@
 
 h1 {
     text-align: center;
+    font-family: 'Ubuntu Mono', monospace; 
+    font-size: 43px;
 }
 
+#cursor {
+    font-size: 43px;
+    font-family: 'Ubuntu Mono', monospace;
+}
 
 body {
     background-color: var(--gray);
