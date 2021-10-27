@@ -1,0 +1,35 @@
+------------ October 26th --------------
+The Beginning of the Journey...
+
+I set out on the journey of making a personal website for CS410. 
+This wouldnt be the first personal website I have create but I really
+wanted to make it something I am proud of and want to share with others.
+
+I began by figuring out what I wanted my webpage to look like. I chose my 
+color scheme and basic layout and begin to create a barebones webpage.
+
+Since I am wanting to go into Cybersecurity, i wanted to go for a very simple
+monotype based webpage. Although it is a very simple plan, it can be hard to visually 
+nail down and make perfect. I plan to use bootstrap or CSS grids at the moment
+to allow compatibility in different browser sizes. But this will be for a later day. 
+
+When choosing my colors, i used https://coolors.co/ to ensure the colors 
+would look good together and also that they were accessible for people who
+are color blind. This site will show you what the site looks like for the many
+different types of color blindness and it really helped me better visualize it. 
+Since I was going for a hackereque look I could have gone with the basic black and 
+green like most webpages I have seen to basically mimic a terminal window. But 
+instead i chose to add a personal touch of using my favorite color, blue, and then 
+made the background a softer dark grey. This should open the webpage up a bit more in
+terms of viewing. 
+
+In the future, I have though about the potential to add a light/dark mode since 
+this has been a very popular trend recently with the most recent OS on both mac and PC, 
+but i have not quite looked into how to implement this. I assume it will involve JS or React. 
+
+After picking the colors and having a general idea of a them, i created a bare barebones
+html webpage and made sure it was functional. I then continued by adding a css page and added
+font that i chose from googles open source font webpage as well as added my colors as variables
+in the stylesheet. 
+
+I then began to tackle the task of a basic nav bar. 
