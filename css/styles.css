@@ -8,9 +8,10 @@
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     font-family: 'Ubuntu Mono', monospace; 
-    font-size: 43px;
+    font-size: 35px;
+    color: var(--skyblue)
 }
 
 #cursor {
@@ -21,5 +22,101 @@ h1 {
 body {
     background-color: var(--gray);
     color: var(--skyblue);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li 
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* NAVBAR */
+.nav-bar
+{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--skyblue);
+    font-size: 24px;
+    user-select: none;
+}
+
+.nav-items a 
+{
+    color: var(--skyblue);
+}
+.menu 
+{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li:hover 
+{
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li 
+{
+    padding: 5px 14px;
+}
+
+input[type=checkbox]
+{
+    display: none;
+}
+
+.hamburger
+{
+    display: none;
+    font-size: 34px;
+    user-select: none;
+    padding: 5px;
+}
+
+/* MOBILE DEVICE NAV BAR */
+@media (max-width: 840px) 
+{
+    .menu
+    {
+        display: none;
+        position: absolute;
+        background-color: lightgray;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover 
+    {
+        display: inline-block;
+        background-color: black;
+        transition: 0.3s ease;
+    }
+
+    input[type=checkbox]:checked ~ .menu
+    {
+        display: block;
+    }
+
+    .hamburger
+    {
+        display: block;
+    }
 
 }
