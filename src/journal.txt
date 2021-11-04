@@ -33,3 +33,29 @@ font that i chose from googles open source font webpage as well as added my colo
 in the stylesheet. 
 
 I then began to tackle the task of a basic nav bar. 
+
+------------ November 4th --------------
+I began the task of the Navbar today. I first wanted to figure out how to figure out how a typcial
+hamburger menu would work. After viewing multiple different sites, i found that there is a way to 
+use a checkbox and basically hide and expand a menu by simply clicking the "hidden Checkbox". I 
+viewed the following for guidance on this matter:
+https://css-tricks.com/the-checkbox-hack/
+
+My next task is to determine whether I am wanting to use a flexbox, css grid or bootstrap. I am 
+thinking that i will use a CSS grid since it allows great flexibility on the layout of the overall 
+page. 
+
+While designing my layout I decided to remove the independant Home button from the navbar and move 
+it to use my name as the home button. 
+
+Now back to the grid... I plan on using a layout similar to the following:
+grid-template-areas: 
+    "About About About About"
+    "Previous-Work-1 Previous-Work-1 Previous-Work Previous-Work"
+    "Projects Projects Projects Projects"
+    "Contact Contact Contact Contact"; 
+This grid is subject to change but currently this is how it will be laid out in 
+desktop mode. 
+
+After Adding the grid I have noticed that in tablet mode the menu will block some of the text on 
+clicking the hamburger. I will need to look into this to determine if there is a way to offeset on click.
