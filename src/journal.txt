@@ -60,9 +60,25 @@ desktop mode.
 After Adding the grid I have noticed that in tablet mode the menu will block some of the text on 
 clicking the hamburger. I will need to look into this to determine if there is a way to offeset on click.
 
--- November 20 ---
+-- November 19---
 Today I decided i wanted to make my page look more vintage by making it look like an old imac screen.
 To do so i created a div that will be smaller than the webpage and this will display my webpage.
 
-I started by determingn out to make box that only display the amount of text which is on the screen. 
+I started by determing how to make box that only display the amount of text which is on the screen. 
 I noticed that i am also going to need to put some extra work in to make sure this is responsive to different screensizes.
+This was where i began to notice that i will need to go back to the drawing board on the size in which i chsoe for my 
+bootstrap. I say this because the page does not resize properly when going from 1024px to 414px. I decided that I am going to 
+make a simplified version of the website for mobile standards. This will basically get rid of the deco frame in which i created
+to make it look like a old mac.
+
+--- November 20 ---
+My next step was to begin filling my webpage with content since I have gotten it prety close to how i want it to look.
+I started with the previous work section, first i added a button so you can download my resume, i am still thinking if i wanna
+develop a window that will popup and present my resume or if i just wanna make it downloadable. For now downloadable is a good start.
+
+I ran into a problem when trying to use unorganized and organized lists in this section. I found that i was not getting any numbers
+or any bullets displayed onto the page with the text. I then realized globally set lists to not display bullets because of the way i 
+set up my main menu. To solve this i assigned a id to the list so i can control just this list.
+
+The resume was added and I chose to host the pdf through my google drive since it has a built in pdf viewer and will give the personal
+the option to download the pdf if they want versus requiring someone to download it every time they click the button. 

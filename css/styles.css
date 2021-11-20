@@ -1,5 +1,5 @@
 :root {
-    --skyblue: #1eff3c;
+    --brightgreen: #1eff3c;
     --vintage_pc: #E3E1C9;
     --deep_space_sparkle: #485B63;
     --screen: #3d3d3d;
@@ -24,7 +24,7 @@ a
 body {
     /*background-color: var(--gray); */
     background-color: var(--vintage_pc);
-    color: var(--skyblue);
+    color: var(--brightgreen);
     font-family: 'Bitter', serif; 
 }
 
@@ -33,7 +33,7 @@ h1 {
     font-family: 'VT323', serif;
     font-weight: bold;
     font-size: 35px;
-    color: var(--skyblue)
+    color: var(--brightgreen)
 }
 
 h1 a 
@@ -43,16 +43,17 @@ h1 a
 
 h2 {
     font-family: 'VT323', serif;
-    text-align: center;
+    text-align: Center;
     font-weight: bolder;
 }
 
 h3 {
     font-family: 'VT323', serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bolder;
-    text-align: center;
 }
+
+
 
 li 
 {
@@ -84,11 +85,18 @@ input[type=checkbox]
     height: 50px; 
 }
 
+#project {
+    list-style-type: '-';
+    padding-left: px;
+}
+
+
 .content-wrapper {
     padding-top: 7em;  
 }
 
-.content {
+.crt{
+    padding: 20px;
     margin: auto;
     background-color: var(--screen);
     display: block;
@@ -99,7 +107,6 @@ input[type=checkbox]
     width: 80%;
     height: 75vh;
     overflow-y: scroll;
-
 }
 .main
 {
@@ -113,31 +120,36 @@ input[type=checkbox]
     padding-bottom: 15px;
 }
 
+.container .col-md-4 {
+    padding: 15px 15px 15px 15px;
+}
+
 /*-------------------- Github Button ----------------- */
-.github-button{
+.button{
     position: block;
-    justify-content: center;
     padding: 15px 20px;
     margin: 40px 0;
-    color: var(--skyblue);
+    color: var(--brightgreen);
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
     margin-right: 50px;
-    border: 1px solid var(--skyblue);
-    border-radius: 10px;
+    border: 1px solid var(--brightgreen);
+    border-radius: 5px;
+    background-color: var(--screen);
+    font-family: 'VT323', serif;
 }
 
-.github-button:hover{
-    background: var(--skyblue);
+.button:hover{
+    background: var(--brightgreen);
     color: #050801;
-    box-shadow: 0 0 5px var(--skyblue),
-                0 0 25px var(--skyblue),
-                0 0 50px var(--skyblue),
-                0 0 200px var(--skyblue);
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+    box-shadow: 0 0 5px var(--brightgreen),
+                0 0 25px var(--brightgreen),
+                0 0 50px var(--brightgreen),
+                0 0 200px var(--brightgreen);
+     /* -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); */
 }
 
 /*------------------- NAVBAR ----------------------- */
@@ -161,17 +173,23 @@ input[type=checkbox]
 {
     color: var(--deep_space_sparkle);
 }
-
+.nav-items a:hover 
+{
+    color: var(--vintage_pc);
+}
 
 .menu 
 {
     display: flex;
     gap: 1em;
     font-size: 18px;
+    
 }
+
 .menu li:hover 
 {
-    background-color: black;
+    background-color: var(--deep_space_sparkle);
+    
     border-radius: 5px;
     transition: 0.3s ease;
 }
@@ -215,7 +233,7 @@ input[type=checkbox]
     {
         display: block;
     }
-    .content {
+    .crt {
         margin: auto;
         background-color: va(--screen);
         display: block;
