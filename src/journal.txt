@@ -59,3 +59,10 @@ desktop mode.
 
 After Adding the grid I have noticed that in tablet mode the menu will block some of the text on 
 clicking the hamburger. I will need to look into this to determine if there is a way to offeset on click.
+
+-- November 20 ---
+Today I decided i wanted to make my page look more vintage by making it look like an old imac screen.
+To do so i created a div that will be smaller than the webpage and this will display my webpage.
+
+I started by determingn out to make box that only display the amount of text which is on the screen. 
+I noticed that i am also going to need to put some extra work in to make sure this is responsive to different screensizes.
