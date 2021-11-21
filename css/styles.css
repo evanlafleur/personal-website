@@ -78,6 +78,22 @@ input[type=checkbox]
     bottom: 8%;
 }
 
+#deco-crtbezel {
+    border-radius: 40px;
+    position: absolute;
+    width: 85%;
+    height: 80%;
+    display: relative;
+    /* padding: 20px; */
+    margin: auto;
+    background: #c2bfb0;
+    top: 48.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+    max-width: 1450px;
+}
+
 #deco-image {
     position: fixed;
     bottom: 2%;
@@ -93,9 +109,10 @@ input[type=checkbox]
 
 .content-wrapper {
     padding-top: 7em;  
+    /* position: relative */
 }
 
-.crt{
+.crt{ 
     padding: 20px;
     margin: auto;
     background-color: var(--screen);
@@ -107,6 +124,7 @@ input[type=checkbox]
     width: 80%;
     height: 75vh;
     overflow-y: scroll;
+    z-index: 9;
 }
 .main
 {
@@ -248,6 +266,9 @@ input[type=checkbox]
         display: none;
     }
     #deco-image {
+        display: none;
+    }
+    #deco-crtbezel {
         display: none;
     }
 }
