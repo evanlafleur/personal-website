@@ -22,9 +22,6 @@ a
 }
 
 body {
-    /*background-color: var(--gray); */
-    /* margin-top: 6px;
-    margin-bottom: 6px; */
     background-color: var(--vintage_pc);
     color: var(--brightgreen);
     font-family: 'Bitter', serif; 
@@ -32,14 +29,15 @@ body {
 }
 
 h1 {
-    text-align: left;
     font-family: 'VT323', serif;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 50px;
+    text-align: center;
 }
 
 h1 a 
 {
+    
     color: var(--brightgreen);
 }
 
@@ -47,6 +45,7 @@ h2 {
     font-family: 'VT323', serif;
     text-align: Center;
     font-weight: bolder;
+    padding-top: 70px;
 }
 
 h3 {

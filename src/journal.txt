@@ -84,5 +84,15 @@ The resume was added and I chose to host the pdf through my google drive since i
 the option to download the pdf if they want versus requiring someone to download it every time they click the button. 
 
 --- November 21 --
+Today, I changed the look around on my webpage once again... It was not as responsive as i had wanted it so i started by removing a few of the
+deco peices and instead decided to just make it look like a old generic crt monitor instead of a mac classic like i originally planned.
+I also decided to move the menubar down onto the CRT and make it look like its part of the operating system. I did this because i plan to add a 
+screen flicker when i complete the actual content on my website and i wanted to make a way for the user to turn it off if they did not want the 'crt effect'.
+
+I attached a few articles i used to aid in my setting up of a sticky menu as well as my research into how to make a sub menu in the naviation bar.
 https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+https://www.w3schools.com/howto/howto_css_subnav.asp
+
+One of my biggest challenges today was trying to make a sticky item inside of my scrollable div. I found a way to do it in the end, this was found by lots 
+of trial in error with various css code until i was able to not only make it sticky but also set it to the front of all the layers with a z-index of 9999.
 
