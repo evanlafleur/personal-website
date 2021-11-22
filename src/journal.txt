@@ -82,3 +82,7 @@ set up my main menu. To solve this i assigned a id to the list so i can control 
 
 The resume was added and I chose to host the pdf through my google drive since it has a built in pdf viewer and will give the personal
 the option to download the pdf if they want versus requiring someone to download it every time they click the button. 
+
+--- November 21 --
+https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+
