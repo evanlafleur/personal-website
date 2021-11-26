@@ -242,6 +242,54 @@ input[type=checkbox]
     padding-top: 60px;
 } */
 
+.form-style {
+    margin: 10px auto;
+    width: 400px;
+    padding: 20px 12px 10px 20px;
+}
+
+.form-style td {
+    padding: 0;
+    display: block;
+    list-style-type: none;
+    margin: 10px 0 0 0;
+}
+
+.form-style label {
+    margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-style .field-textarea {
+    height: 100px;
+}
+
+.form-style input[type=text],
+.form-style input[type=email], 
+textarea{
+    box-sizing: border-box;
+    padding: 7px;
+    margin: 0px;
+}
+
+.form-style .long{
+    width: 100%;
+}
+
+#errorname {
+    color: red;
+    font-weight: bold;
+}
+
+#errormsg {
+    color: red;
+    font-weight:  bold;
+}
+
+
+
 /* MOBILE DEVICE NAV BAR */
 @media (max-width: 865px) 
 {

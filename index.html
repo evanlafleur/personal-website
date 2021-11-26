@@ -125,8 +125,49 @@
                      
                     <div class="row Contact">
                         <div class="col-md-12 col-lg-12"> <h2 id='contact'> [ Contact Me ] </h2></div>
-                        <div class="col-md-1 col-lg-2"> The trees, therefore, must be such old and primitive techniques that they thought nothing of them, deeming them so inconsequential that even savages like us would know of them and not be suspicious. </div>
-                        <div class="col-md-11 col-lg-10"> It was a weird concept. Why would I really need to generate a random paragraph? Could I actually learn something from doing so? All these questions were running through her head as she pressed the generate button. To her surprise, she found what she least expected to see.</div>
+                        <div class="col-md-12 col-lg-12"> 
+                            <form name ="contactMe" onsubmit="return validate()">
+                                <table class="form-style">
+                                    <tr>
+                                        <td>
+                                            <label>
+                                                Name: <span class="requiredField">*</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="name" label="name field" class="long"/>
+                                            <span class="error" id="errorname"> </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label> Email Address: <span class="requiredField">*</span></label>
+                                        </td>
+                                        <td>
+                                            <input type="email" label = "email field" name="email" class="long" />
+                                            <span class="error" id="erroremail"> </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label> Message: <span class="requiredField">*</span></label>
+                                        </td>
+                                        <td>
+                                            <textarea name="message" class="long field-textarea"></textarea>
+                                            <span class="error" id="errormsg"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" value="Send">
+                                            <input type="reset" value="Reset">
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
