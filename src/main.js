@@ -13,6 +13,7 @@ setInterval(() => {
     }
 }, speed);
 
+
 function validate() {
     var name = document.forms["contactMe"]["name"];
     var msg = document.forms["contactMe"]["message"];
@@ -32,23 +33,13 @@ function validate() {
     } else {
         document.getElementById('errormsg').innerHTML="";
     }
+
+    document.getElementById('content').innerHTML="";
+    document.getElementById('content').innerHTML="<span style='font-size:40px; color: red'>Form Successfully Submitted! \n Now returning you to webpage </span>";
+    
+    setTimeout(function() {
+        window.location.reload();
+    }, 3000);
+    
+
 }
-
-// document.addEventListener('DOMContentLoaded', function() {
- 
-//     window.addEventListener('scroll', stickyBar);
-  
-//     // window.onscroll = function() {stickyBar()};
-//     var navbar = document.getElementById("navbar");
-//     var sticky = navbar.offsetTop;
-
-//     function stickyBar() {
-//         if (window.pageYOffset >= sticky) {
-//             navbar.classList.add("sticky");
-//         }
-//         else 
-//         {
-//             navbar.classList.remove("sticky");
-//         }
-//     }
-// })
