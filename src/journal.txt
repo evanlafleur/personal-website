@@ -96,3 +96,37 @@ https://www.w3schools.com/howto/howto_css_subnav.asp
 One of my biggest challenges today was trying to make a sticky item inside of my scrollable div. I found a way to do it in the end, this was found by lots 
 of trial in error with various css code until i was able to not only make it sticky but also set it to the front of all the layers with a z-index of 9999.
 
+--- November 22 ---
+Today was a pretty short day for working on this website, the main that that was done was adjusting the padding so the anchors on my page would take into account the 
+menu bar. I did so by adjusting the top padding for the h2 heading.
+
+--- November 25 ---
+Today i tackled the contact form, my plan was to just make a very simple and easy to fillout contact form. 
+I also wanted to make some sort of error tracking, ie. name doesnt get entered.  I was able to find a way to do so by
+using javascript to collect the data from the form and validate that there was actually data in that field. 
+After completing this form and layout i tried a few different things but i was unable to find a way to actually link this to 
+my email so i would actually receive the contact form data. I am hoping to go back to this at some point once i find a plugin or 
+have time to dig through my old php book from highschool. 
+
+--- November 26 ---
+Today i mainly just made a small "success" banner. So when a survey is filled out correctly, I pass a string of words 
+from JS to the main html file to allow the users to know their form has been submitted. I added a time delay to this to allow
+plenty of time to read the notice.
+
+--- Novemeber 28 --- 
+I am getting close to being done and having a presentable webpage. Today i moved the outer display bezel from the background into its own div to account for 
+a more realistic CRT monitor. I also attempted to add a effect of a CRT monitor turning on and off but had no luck as the CSS i found online for animations was
+a bit too advanced for me to figure out and after an hour or so of messing with it, it was not turning out how i would like. Since i am running out of time i chose
+to scrap this for now. I now just have a few things left i would like to accomplish before
+deploying to the web.
+
+Things to to:
+- finish sub menu on main menu bar
+    + Add some options to do things like change color or text, etc.
+- adjust colors for mobile menu
+- fix the mobile menu and how it shows up and dissapears
+- adjust some of the responsive media settings
+- finish up the projects category
+- add an expertise areas   
+    + Language specialties
+    + Special Interests

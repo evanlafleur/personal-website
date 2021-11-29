@@ -9,7 +9,6 @@
     --black: #010400;
 }
 
-
 *
 {
     margin: 0;
@@ -60,7 +59,7 @@ li
     list-style: none;
 }
 
-input[type=checkbox]
+#checkbox_toggle
 {
     display: none;
 }
@@ -121,23 +120,48 @@ input[type=checkbox]
     width: 75%;
     z-index: 9;
     
+    -ms-overflow-style: none; /*Hides scrollbar for IE,Edge */
+    scrollbar-width: none; /*Hides scrollbar for safari */
+
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-
-
 }
 
-.main
+/*Hides scrollbar for a majority of browsers */
+.crt::-webkit-scrollbar {
+    display: none;
+}
+
+#projects_button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.short-desc{
+    text-align: center;
+}
+
+#contact_form {
+    margin-bottom: 150px;
+}
+/* .main
 {
+    margin-right: 40px;
     margin-bottom: 30px;
-}
+} */
 
+#home {
+    padding-top: 25px;
+}
 
 /*--------------------- Bootstrap -------------------------- */
 .container .row{
+    margin-left: 25px;
+    margin-right: 25px;
     padding-top: 30px;
     padding-bottom: 15px;
 }
@@ -163,6 +187,8 @@ input[type=checkbox]
     background-color: var(--screen);
     font-family: 'VT323', serif;
 }
+
+
 
 .button:hover{
     background: var(--brightgreen);

@@ -16,167 +16,182 @@
 
     <script src ="src/main.js"></script>
 </head>
-    <body>
-        <div class="content-wrapper">
-            <div id="deco-crtframe">
-            </div>
-            <div id="deco-crtbezel"> 
-            </div>
-            <div class="crt">
-                <div class="nav-bar" id="navbar">
-                    <ul class="nav-items">
-                        <input type="checkbox" id="checkbox_toggle" />
-                        <label for="checkbox_toggle" class="hamburger">&#9776; </label>
-                        <div class="menu" >
-                            <li> &#9672; </li>
-                            <li> <a href="#about">About</a></li>
-                            <li> <a href="#prev-work">Previous Work</a></li>
-                            <li> <a href="#projects">Projects</a></li>
-                            <li> <a href="#contact">Contact</a></li>
-                        </div>
-                    </ul>
-                </div>
-                <div class="container" id="content">
-                    <br/>
-                    <h1> Evan La Fleur <span id="cursor">|</span></h1>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2 id="about">[ About Me ]</h2>
-                            Hi my name is Evan La Fleur. I am currently a student at Portland 
-                            State and i am working towards my bachelors in Computer Science. Once 
-                            I complete my undergrad I am looking at getting into the Cybersecurity 
-                            field, in particular penetration testing and web application 
-                            development/security. I currently take on small contract jobs with start
-                            up companies to help assess needs in terms of securing their website 
-                            and applications. If you have any questions or would like to 
-                            collaborate on something, dont hesitate to reach out!
-                        </div>
-                    </div>
-                     
-                    <div class="row Previous Work">
-                        <div class="col-md-12">  
-                            <h2 id="prev-work"> 
-                                [ Previous Work ] 
-                            </h2>
-                        </div>
-                        <div class="col-md-12"> 
-                            <div id="experience">
-                                <h3> Best Buy - Retail Supervisor </h3>
-                                <ul>
-                                    <li id="project"> 
-                                        Assisted in running a client obsessed business model, while coaching and working with a small team of technicians to provide an overall world-class experience. 
-                                    </li>
-                                    <li id="project"> 
-                                        Utilize employee and Client feedback, scorecards, and financial results to review the business. Works with the leaders to build and implement business support plans to better capitalize on business opportunities.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3> Sears Holding Corporation - Operations Manager </h3>
-                                <ul>
-                                    <li id="project"> 
-                                        Managed Backroom process and execution for business unit in excess of 20M annually.
-                                    </li>
-                                    <li id="project">
-                                        Facilitated effective coaching skills for developing and managing associates. 
-                                    </li>
-                                </ul>
-                            </div>
-                            <a class="button" href="https://drive.google.com/file/d/1eF_BBvBrolhqZCGHipiXznsKeMNBhSjA/view?usp=sharing">
-                                View Resume
-                            </a>
-
-                        </div>
-                    </div>
-                    
-                    <div class="row Projects">
-                        <div class="col-md-12"> 
-                            <h2 id="projects"> 
-                                [ Projects ] 
-                            </h2></div>
-
-                            <div class="col-md-4"> 
-                                <h3 style="text-align: center;">
-                                    Robotics Control System
-                                </h3>
-                                <p class="short-desc"> 
-                                    A python gui that tranlates joystick commands and translates them into code for a under water robot.
-                                </p>
-                                <a class="button"> View </a>
-                            </div>
-
-                            <div class="col-md-4"> 
-                                <h3 style="text-align: center;">
-                                    Second Project 
-                                </h3>
-                                <p class="short-desc"> 
-                                    This is a second projcet for testing purposes.
-                                </p>
-                                <a class="button"> View </a>
-                            </div>
-                            <div class="col-md-4"> 
-                                <h3 style="text-align: center;">  
-                                    Third Project 
-                                </h3>
-                                <p class="short-desc"> 
-                                    This is a third projcet for testing purposes
-                                </p>
-                                <a class="button"> View </a>
-                            </div>
-                    </div>
-                     
-                    <div class="row Contact">
-                        <div class="col-md-12 col-lg-12"> <h2 id='contact'> [ Contact Me ] </h2></div>
-                        <div class="col-md-12 col-lg-12"> 
-                            <form name ="contactMe" onsubmit="return validate()">
-                                <table class="form-style">
-                                    <tr>
-                                        <td>
-                                            <label>
-                                                Name: <span class="requiredField">*</span>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <input type="text" name="name" label="name field" class="long"/>
-                                            <span class="error" id="errorname"> </span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label> Email Address: <span class="requiredField">*</span></label>
-                                        </td>
-                                        <td>
-                                            <input type="email" label = "email field" name="email" class="long" />
-                                            <span class="error" id="erroremail"> </span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label> Message: <span class="requiredField">*</span></label>
-                                        </td>
-                                        <td>
-                                            <textarea name="message" class="long field-textarea"></textarea>
-                                            <span class="error" id="errormsg"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>
-                                            <input type="submit" value="Send">
-                                            <input type="reset" value="Reset">
-
-                                        </td>
-                                    </tr>
-                                </table>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
+<body>
+    <div class="content-wrapper">
+        <div id="deco-crtframe">
         </div>
-    </body>
-    <footer>
-        
-    </footer>
+        <div id="deco-crtbezel"> 
+        </div>
+        <div class="crt">
+            <div class="nav-bar" id="navbar">
+                <ul class="nav-items">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776; </label>
+                    <div class="menu" >
+                        <li> &#9672; </li>
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#prev-work">Previous Work</a></li>
+                        <li> <a href="#projects">Projects</a></li>
+                        <li> <a href="#contact">Contact</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="container" id="content">
+                <br/>
+                <div id="home">
+                    <h1 style="text-align:center;"> Evan La Fleur <span id="cursor">|</span></h1>
+                    <h2> College Student @ Portland State University</h2>
+                    <!-- <h3> Computer Science Major</h3> -->
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 id="about">[ About Me ]</h2>
+                        Hi my name is Evan La Fleur. I am currently a student at Portland 
+                        State and i am working towards my bachelors in Computer Science. Once 
+                        I complete my undergrad I am looking at getting into the Cybersecurity 
+                        field, in particular penetration testing and web application 
+                        development/security. I currently take on small contract jobs with start
+                        up companies to help assess needs in terms of securing their website 
+                        and applications. If you have any questions or would like to 
+                        collaborate on something, dont hesitate to reach out!
+                    </div>
+                </div>
+                    
+                <div class="row Previous Work">
+                    <div class="col-md-12">  
+                        <h2 id="prev-work"> 
+                            [ Previous Work ] 
+                        </h2>
+                    </div>
+                    <div class="col-md-12"> 
+                        <div id="experience">
+                            <h3> Best Buy - Retail Supervisor </h3>
+                            <ul>
+                                <li id="project"> 
+                                    Assisted in running a client obsessed business model, while coaching and working with a small team of technicians to provide an overall world-class experience. 
+                                </li>
+                                <li id="project"> 
+                                    Utilize employee and Client feedback, scorecards, and financial results to review the business. Works with the leaders to build and implement business support plans to better capitalize on business opportunities.
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3> Sears Holding Corporation - Operations Manager </h3>
+                            <ul>
+                                <li id="project"> 
+                                    Managed Backroom process and execution for business unit in excess of 20M annually.
+                                </li>
+                                <li id="project">
+                                    Facilitated effective coaching skills for developing and managing associates. 
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="button" href="https://drive.google.com/file/d/1eF_BBvBrolhqZCGHipiXznsKeMNBhSjA/view?usp=sharing">
+                            View Resume
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="row Projects">
+                    <div class="col-md-12"> 
+                        <h2 id="projects"> 
+                            [ Projects ] 
+                        </h2></div>
+
+                        <div class="col-md-4"> 
+                            <h3 style="text-align: center;">
+                                Robotics Control System
+                            </h3>
+                            <p class="short-desc"> 
+                                A python gui that tranlates joystick commands and translates them into code for a under water robot.
+                            </p>
+                            <a class="button" id="projects_button" href="https://github.com/evanlafleur/Laveer-Enterprises/" >View </a>
+                        </div>
+
+                        <div class="col-md-4"> 
+                            <h3 style="text-align: center;">
+                                Algorithm Coding Examples
+                            </h3>
+                            <p class="short-desc"> 
+                                This repository contains code from my Algorithms class(CS350) from Portland State University.
+                            </p>
+                            <a class="button" id="projects_button" href="https://github.com/evanlafleur/CS350"> View </a>
+                        </div>
+
+                        <div class="col-md-4"> 
+                            <h3 style="text-align: center;">  
+                                Third Project 
+                            </h3>
+                            <p class="short-desc"> 
+                                This is a third projcet for testing purposes
+                            </p>
+                            <a class="button" id="projects_button"> View </a>
+                        </div>
+                        <div class="col-md-12"> 
+                            <h3 style="text-align: center;">
+                                Personal Website
+                            </h3>
+                            <p class="short-desc"> 
+                                Source code for this website which was developed from scratch using a variety of HTML, CSS and some Javascript.
+                            </p>
+                            <a class="button" id="projects_button" href="https://github.com/evanlafleur/personal-website"> View </a>
+                        </div>
+
+                        
+                </div>
+                    
+                <div class="row Contact">
+                    <div class="col-md-12 col-lg-12"> <h2 id='contact'> [ Contact Me ] </h2></div>
+                    <div class="col-md-12 col-lg-12" id='contact_form'> 
+                        <form name ="contactMe" onsubmit="return validate()">
+                            <table class="form-style">
+                                <tr>
+                                    <td>
+                                        <label>
+                                            Name: <span class="requiredField">*</span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="name" label="name field" class="long"/>
+                                        <span class="error" id="errorname"> </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label> Email Address: <span class="requiredField">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="email" label = "email field" name="email" class="long" />
+                                        <span class="error" id="erroremail"> </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label> Message: <span class="requiredField">*</span></label>
+                                    </td>
+                                    <td>
+                                        <textarea name="message" class="long field-textarea"></textarea>
+                                        <span class="error" id="errormsg"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="submit" value="Send">
+                                        <input type="reset" value="Reset">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+<footer>
+</footer>
 </html>
