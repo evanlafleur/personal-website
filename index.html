@@ -1,10 +1,13 @@
-<!DOCTYPE html lang="en"> 
-<html>
+<!DOCTYPE html> 
+<html lang="en">
 
 <head> 
     <meta charset="utf-8">
-    <title> Evans Website </title>
     <meta name ="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name ="description" content="Professional Development website about Evan La Fleur"/>
+    <meta name ="author" content="Evan La Fleur"/>
+
+    <title> Evans Website </title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +31,7 @@
                     <input type="checkbox" id="checkbox_toggle" />
                     <label for="checkbox_toggle" class="hamburger">&#9776; </label>
                     <div class="menu" >
-                        <li> &#9672; </li>
+                        <li class="dropdown_menu" id="sub_menu"> &#9672; </li>
                         <li> <a href="#about">About</a></li>
                         <li> <a href="#prev-work">Previous Work</a></li>
                         <li> <a href="#projects">Projects</a></li>
@@ -46,7 +49,7 @@
 
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 id="about">[ About Me ]</h2>
+                        <h2 id="about">-----  About Me  -----</h2>
                         Hi my name is Evan La Fleur. I am currently a student at Portland 
                         State and i am working towards my bachelors in Computer Science. Once 
                         I complete my undergrad I am looking at getting into the Cybersecurity 
@@ -61,118 +64,126 @@
                 <div class="row Previous Work">
                     <div class="col-md-12">  
                         <h2 id="prev-work"> 
-                            [ Previous Work ] 
+                            ----- Previous Work ----- 
                         </h2>
                     </div>
                     <div class="col-md-12"> 
-                        <div id="experience">
-                            <h3> Best Buy - Retail Supervisor </h3>
-                            <ul>
-                                <li id="project"> 
-                                    Assisted in running a client obsessed business model, while coaching and working with a small team of technicians to provide an overall world-class experience. 
-                                </li>
-                                <li id="project"> 
-                                    Utilize employee and Client feedback, scorecards, and financial results to review the business. Works with the leaders to build and implement business support plans to better capitalize on business opportunities.
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3> Sears Holding Corporation - Operations Manager </h3>
-                            <ul>
-                                <li id="project"> 
-                                    Managed Backroom process and execution for business unit in excess of 20M annually.
-                                </li>
-                                <li id="project">
-                                    Facilitated effective coaching skills for developing and managing associates. 
-                                </li>
-                            </ul>
-                        </div>
-                        <a class="button" href="https://drive.google.com/file/d/1eF_BBvBrolhqZCGHipiXznsKeMNBhSjA/view?usp=sharing">
-                            View Resume
-                        </a>
+                        <div class="work-experience">
+                            <div>
+                                <h3> Best Buy - Retail Supervisor </h3>
+                                <p class="expand" index="1">
+                                    <span>More Details</span>
+                                </p>
+                                <div class="more_details" index="1" style="display: none">
+                                    <ul>
+                                        <li id="project"> 
+                                            Assisted in running a client obsessed business model, while coaching and working with a small team of technicians to provide an overall world-class experience. 
+                                        </li>
+                                        <li id="project"> 
+                                            Utilize employee and Client feedback, scorecards, and financial results to review the business. Works with the leaders to build and implement business support plans to better capitalize on business opportunities.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="detract" index="1" style="display: none">
+                                    <span class="direction">Close Details</span>
+                                </p>
+                            </div>
+                            <div>
+                                <h3> Sears Holding Corporation - Operations Manager </h3>
+                                <p class="expand" index="2">
+                                    <span>More Details </span>
+                                </p>
+                                <div class="more_details" index="2" style="display:none">
+                                    <ul>
+                                        <li id="project"> 
+                                            Managed Backroom process and execution for business unit in excess of 20M annually.
+                                        </li>
+                                        <li id="project">
+                                            Facilitated effective coaching skills for developing and managing associates. 
+                                        </li>
+                                    </ul>
+                                </div>
 
+                                <p class="detract" index="2" style="display: none">
+                                    <span class="direction">Close Details</span>
+                                </p>
+                            </div>
+                            <a class="button" href="https://drive.google.com/file/d/1eF_BBvBrolhqZCGHipiXznsKeMNBhSjA/view?usp=sharing">
+                                View Resume
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="row Projects">
                     <div class="col-md-12"> 
                         <h2 id="projects"> 
-                            [ Projects ] 
-                        </h2></div>
+                            ----- Projects ----- 
+                        </h2>
+                    </div>
+                    <div class="col-md-6" id="project_item"> 
+                        <h3 style="text-align: center;">
+                            Robotics Control System
+                        </h3>
+                        <p class="short-desc"> 
+                            A python gui that tranlates joystick commands and translates them into code for a under water robot.
+                        </p>
+                        <a class="button" id="projects_button" href="https://github.com/evanlafleur/Laveer-Enterprises/" >View </a>
+                    </div>
 
-                        <div class="col-md-4"> 
-                            <h3 style="text-align: center;">
-                                Robotics Control System
-                            </h3>
-                            <p class="short-desc"> 
-                                A python gui that tranlates joystick commands and translates them into code for a under water robot.
-                            </p>
-                            <a class="button" id="projects_button" href="https://github.com/evanlafleur/Laveer-Enterprises/" >View </a>
-                        </div>
-
-                        <div class="col-md-4"> 
-                            <h3 style="text-align: center;">
-                                Algorithm Coding Examples
-                            </h3>
-                            <p class="short-desc"> 
-                                This repository contains code from my Algorithms class(CS350) from Portland State University.
-                            </p>
-                            <a class="button" id="projects_button" href="https://github.com/evanlafleur/CS350"> View </a>
-                        </div>
-
-                        <div class="col-md-4"> 
-                            <h3 style="text-align: center;">  
-                                Third Project 
-                            </h3>
-                            <p class="short-desc"> 
-                                This is a third projcet for testing purposes
-                            </p>
-                            <a class="button" id="projects_button"> View </a>
-                        </div>
-                        <div class="col-md-12"> 
-                            <h3 style="text-align: center;">
-                                Personal Website
-                            </h3>
-                            <p class="short-desc"> 
-                                Source code for this website which was developed from scratch using a variety of HTML, CSS and some Javascript.
-                            </p>
-                            <a class="button" id="projects_button" href="https://github.com/evanlafleur/personal-website"> View </a>
-                        </div>
+                    <div class="col-md-6" id="project_item"> 
+                        <h3 style="text-align: center;">
+                            Algorithm Coding Examples
+                        </h3>
+                        <p class="short-desc"> 
+                            This repository contains code from my Algorithms class(CS350) from Portland State University.
+                        </p>
+                        <a class="button" id="projects_button" href="https://github.com/evanlafleur/CS350"> View </a>
+                    </div>
+                    <div class="col-md-12" id="project_item"> 
+                        <h3 style="text-align: center;">
+                            Personal Website
+                        </h3>
+                        <p class="short-desc"> 
+                            Source code for this website which was developed from scratch using a variety of HTML, CSS and some Javascript.
+                        </p>
+                        <a class="button" id="projects_button" href="https://github.com/evanlafleur/personal-website"> View </a>
+                    </div>
 
                         
                 </div>
                     
                 <div class="row Contact">
-                    <div class="col-md-12 col-lg-12"> <h2 id='contact'> [ Contact Me ] </h2></div>
+                    <div class="col-md-12 col-lg-12"> <h2 id='contact'> ----- Contact Me ----- </h2></div>
                     <div class="col-md-12 col-lg-12" id='contact_form'> 
                         <form name ="contactMe" onsubmit="return validate()">
                             <table class="form-style">
                                 <tr>
                                     <td>
-                                        <label>
+                                        <label for="name">
                                             Name: <span class="requiredField">*</span>
                                         </label>
                                     </td>
                                     <td>
-                                        <input type="text" name="name" label="name field" class="long"/>
+                                        <input id="name" type="text" name="name" class="long"/>
                                         <span class="error" id="errorname"> </span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label> Email Address: <span class="requiredField">*</span></label>
+                                        <label for="email"> Email Address: <span class="requiredField">*</span></label>
                                     </td>
                                     <td>
-                                        <input type="email" label = "email field" name="email" class="long" />
+                                        <input id="email" type="email" label = "email field" name="email" class="long" />
                                         <span class="error" id="erroremail"> </span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label> Message: <span class="requiredField">*</span></label>
+                                        <label for="txtarea"> Message: <span class="requiredField">*</span></label>
                                     </td>
                                     <td>
-                                        <textarea name="message" class="long field-textarea"></textarea>
+                                        <textarea id="txtarea" name="message" class="long field-textarea"></textarea>
                                         <span class="error" id="errormsg"></span>
                                     </td>
                                 </tr>

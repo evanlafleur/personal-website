@@ -130,3 +130,7 @@ Things to to:
 - add an expertise areas   
     + Language specialties
     + Special Interests
+- add console log of contact us form
+
+
+

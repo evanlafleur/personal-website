@@ -1,6 +1,7 @@
 var cursor = true;
 var speed = 500;
 
+
 setInterval(() => {
     if(cursor) {
         document.getElementById('cursor').style.opacity = 0;
@@ -40,6 +41,31 @@ function validate() {
     setTimeout(function() {
         window.location.reload();
     }, 3000);
-    
 
 }
+
+$(document).ready(function () {
+    $(".work-experience .expand").click(function () {
+        $(".work-experience .expand").css("display", "none");
+        $(".work-experience .detract").css("display", "block");
+        $(".work-experience .more_details").css("display", "block");
+    });
+
+    $(".work-experience .detract").click(function () {
+        $(".work-experience .expand").css("display", "block");
+        $(".work-experience .detract").css("display", "none");
+        $(".work-experience .more_details").css("display", "none");
+    });
+
+    $(".work-experience .expand2").click(function () {
+        $(".work-experience .expand2").css("display", "none");
+        $(".work-experience .detract2").css("display", "block");
+        $(".work-experience .more_details2").css("display", "block");
+    });
+
+    $(".work-experience .detract2").click(function () {
+        $(".work-experience .expand2").css("display", "block");
+        $(".work-experience .detract2").css("display", "none");
+        $(".work-experience .more_details2").css("display", "none");
+    });
+});

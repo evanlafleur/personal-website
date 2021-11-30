@@ -24,11 +24,14 @@ a
 body {
     /* background-color: var(--vintage_pc);  */
     background-color: black;
-    color: var(--brightgreen);
-    font-family: 'Bitter', serif; 
+    color: white;
+    /* font-family: 'Bitter', serif;  */
+    font-family: 'VT323', serif;
+    font-size: larger;
 }
 
 h1 {
+    color: var(--brightgreen);
     font-family: 'VT323', serif;
     font-weight: bold;
     font-size: 50px;
@@ -37,11 +40,11 @@ h1 {
 
 h1 a 
 {
-    
     color: var(--brightgreen);
 }
 
 h2 {
+    color: var(--brightgreen);
     font-family: 'VT323', serif;
     text-align: Center;
     font-weight: bolder;
@@ -49,6 +52,7 @@ h2 {
 }
 
 h3 {
+    color: var(--brightgreen);
     font-family: 'VT323', serif;
     font-size: 20px;
     font-weight: bolder;
@@ -212,7 +216,7 @@ li
     user-select: none; 
     border-bottom: 1px solid;
     position: sticky;
-    background-color: var(--gray);
+    background-color: black;
     width: 100%;
     top: 0;
     z-index: 9999;
@@ -251,6 +255,25 @@ li
 .menu li 
 {
     padding: 5px 14px;
+}
+
+#project_item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+
+
+.expand:hover,
+.detract:hover,
+.detract2:hover,
+.expand2:hover
+{
+    size: bigger;
+    cursor: pointer;
 }
 
 .hamburger
@@ -322,11 +345,14 @@ textarea{
 /* MOBILE DEVICE NAV BAR */
 @media (max-width: 865px) 
 {
+    #sub_menu {
+        display:none;
+    }
     .menu
     {
         display: none;
         position: fixed;
-        background-color: lightgray;
+        background-color: black;
         right: 0;
         left: 0;
         text-align: center;
@@ -334,10 +360,24 @@ textarea{
     }
     .menu li:hover 
     {
+        width: 100%;
         display: inline-block;
-        background-color: black;
+        background-color: white;
         transition: 0.3s ease;
+        color: black;
     }
+    .nav-items a 
+    {
+        color: var(--brightgreen);
+        /* display: block; */
+        padding: 8px;
+        text-decoration: none;
+        
+    }
+    .nav-items a:hover {
+        color: black;
+    }
+
     input[type=checkbox]:checked ~ .menu
     {
         display: block;
@@ -361,5 +401,7 @@ textarea{
     #deco-crtbezel {
         display: none;
     }
+
+
 }
 
