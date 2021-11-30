@@ -42,7 +42,7 @@ function validate() {
         window.location.reload();
     }, 3000);
 
-}
+};
 
 $(document).ready(function () {
     $(".work-experience .expand").click(function () {
