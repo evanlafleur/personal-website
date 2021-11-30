@@ -44,6 +44,21 @@ function validate() {
 
 };
 
+var $form = $('form#contact-me'),
+    url = 'https://script.google.com/a/macros/pdx.edu/s/AKfycbwXjl2q0WMaqraDrZIfZ7cSxBwCKiirinnQg4S0jFiLs9lYb2DA7y8_NTRPtm7qKSt-BA/exec'
+
+    $('#dubmit-data').on('click', function(e) {
+        e.preventDefault();
+        var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: $form.serializeObject()
+        }).success (
+
+        )
+    })
+
 $(document).ready(function () {
     $(".work-experience .expand").click(function () {
         $(".work-experience .expand").css("display", "none");
