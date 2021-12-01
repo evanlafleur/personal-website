@@ -1,7 +1,7 @@
 var cursor = true;
 var speed = 500;
 
-
+//Used to create a blinking cursor effect
 setInterval(() => {
     if(cursor) {
         document.getElementById('cursor').style.opacity = 0;
@@ -14,7 +14,7 @@ setInterval(() => {
     }
 }, speed);
 
-
+//Validates the contact information actually is entered
 function validate() {
     var name = document.forms["contactMe"]["name"];
     var msg = document.forms["contactMe"]["message"];
@@ -44,6 +44,7 @@ function validate() {
 
 };
 
+//Used to show and hide extra details in work category
 $(document).ready(function () {
     $(".work-experience .expand").click(function () {
         $(".work-experience .expand").css("display", "none");
@@ -68,8 +69,11 @@ $(document).ready(function () {
         $(".work-experience .detract2").css("display", "none");
         $(".work-experience .more_details2").css("display", "none");
     });
+
 });
 
+
+//Custom Colors and settings popup window
 window.onload = function(){
 var settings_modal = document.getElementById("settings_panel");
 var btn = document.getElementById("settings_btn");
