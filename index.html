@@ -30,7 +30,7 @@
         </div>
         
         <div class="crt" id="crt_frame">
-            <div class="nav-bar" id="navbar">
+            <div class="nav-bar" id="navbar" aria-label="Navigation Bar for webpage" >
                 <ul class="nav-items">
                     <input type="checkbox" id="checkbox_toggle" />
                     <label for="checkbox_toggle" class="hamburger">&#9776; </label>
@@ -46,8 +46,8 @@
             </div>
             <div class="container" id="content">
                 <br/>
-                <div id="home">
-                    <div class="settings" id="settings_panel">
+                <div id="home" aria-label="Home section" >
+                    <div class="settings" id="settings_panel" aria-label="Settings Menu" >
                         <div class="settings-content">
                             <span class="close">&times;</span>
                             <h2> Settings: </h2>
@@ -69,7 +69,9 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 class="header" id="about">-----  About Me  -----</h2>
+                        <h2 class="header" id="about" aria-label="About me description" >
+                            -----  About Me  -----
+                        </h2>
                         Hi, my name is Evan La Fleur. I am currently a student at Portland State, 
                         and I am working towards my bachelor's in Computer Science. Once I complete 
                         my undergrad, I am looking to get into the Cybersecurity field, particularly 
@@ -82,7 +84,7 @@
 
                 <div class="row Previous Work">
                     <div class="col-md-12">  
-                        <h2 id="prev-work"> 
+                        <h2 id="prev-work" aria-label="Previous Work for me" > 
                             ----- Previous Work ----- 
                         </h2>
                     </div>
@@ -141,7 +143,7 @@
                 
                 <div class="row Projects">
                     <div class="col-md-12"> 
-                        <h2 id="projects"> 
+                        <h2 id="projects" aria-label="Recent Projects" > 
                             ----- Projects ----- 
                         </h2>
                     </div>
@@ -178,7 +180,11 @@
                 </div>
                     
                 <div class="row Contact">
-                    <div class="col-md-12 col-lg-12"> <h2 id='contact'> ----- Contact Me ----- </h2></div>
+                    <div class="col-md-12 col-lg-12"> 
+                        <h2 id='contact' aria-label="Contact Form to reach me" > 
+                            ----- Contact Me ----- 
+                        </h2>
+                    </div>
                     <div class="col-md-12 col-lg-12" id='contact_form'> 
                         <form id="contact-me" name ="contactMe" onsubmit="return validate()">
                             <table class="form-style">

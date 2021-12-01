@@ -13,6 +13,8 @@
     margin:-100px 0 0;
 
 }
+
+/*Main Elements of Webpage*/
 *
 {
     margin: 0;
@@ -67,13 +69,6 @@ li
     list-style: none;
 }
 
-#h_blue, #h_white, #h_green,
-#t_white, #t_green, #b_grey,
-#b_blue, #b_black
-{
-    cursor: pointer;
-}
-
 
 #checkbox_toggle
 {
@@ -85,6 +80,8 @@ li
     font-family: 'VT323', serif;
 }
 
+
+/*Two Deco Divs for the look of an old CRT Monitor*/
 #deco-crtbezel {
     border-radius: 40px;
     position: absolute;
@@ -123,7 +120,7 @@ li
 }
 
 
-
+/* CSS for CRT and its Wrapper */
 .content-wrapper {
      display: block;
 }
@@ -154,12 +151,20 @@ li
     display: none;
 }
 
+/*Project formatting */
 #projects_button {
     display: flex;
     justify-content: center;
     margin: auto;
 }
 
+#project_item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
 .short-desc{
     text-align: center;
 }
@@ -270,14 +275,16 @@ li
 {
     padding: 5px 14px;
 }
-
-#project_item {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+.hamburger
+{
+    display: none;
+    font-size: 34px;
+    user-select: none;
+    padding: 5px;
 }
+
+
+
 
 .work-experience {
     display: flex;
@@ -294,13 +301,7 @@ li
     cursor: pointer;
 }
 
-.hamburger
-{
-    display: none;
-    font-size: 34px;
-    user-select: none;
-    padding: 5px;
-}
+
 
 
 /* Form Styling */
@@ -387,6 +388,13 @@ textarea{
     cursor: pointer;
 }
 
+/*Enables Pointer Cursor for Settings Items*/
+#h_blue, #h_white, #h_green,
+#t_white, #t_green, #b_grey,
+#b_blue, #b_black
+{
+    cursor: pointer;
+}
 
 /* SOCIAL MEDIA ICONS */
 .flex-center {
