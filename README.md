@@ -37,4 +37,6 @@ All Button Tutorials: https://freefrontend.com/css-buttons/
 
 Social Button Tutorial: https://codepen.io/miguelcast/pen/pwZMOJ
 
+Blinking Cursor: https://medium.com/@bharatgupta_2334/how-to-create-blinking-cursor-effect-using-javascript-fad099e8bcb9
+
 
