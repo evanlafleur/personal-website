@@ -22,12 +22,21 @@ https://pages.github.com/
 
 #### Tutorials Used in the Making of this project:
 Collapsible Divs: https://www.w3schools.com/howto/howto_js_collapsible.asp
+
 Modal for Settings: https://www.w3schools.com/howto/howto_css_modals.asp
+
 Creating a Sticky Navbar: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+
 Creating a submenu nav item: https://www.w3schools.com/howto/howto_css_subnav.asp
+
 Checkbox hack for mobile menu: https://css-tricks.com/the-checkbox-hack/
+
 Color Picker: https://coolors.co/ 
+
 All Button Tutorials: https://freefrontend.com/css-buttons/
+
 Social Button Tutorial: https://codepen.io/miguelcast/pen/pwZMOJ
+
+Blinking Cursor: https://medium.com/@bharatgupta_2334/how-to-create-blinking-cursor-effect-using-javascript-fad099e8bcb9
 
 
