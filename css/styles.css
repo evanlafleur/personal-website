@@ -3,10 +3,7 @@
     --vintage_pc: #E3E1C9;
     --deep_space_sparkle: #485B63;
     --screen: #3d3d3d;
-    --pink: #ec058E;
-    --white: #fffbfc;
-    --gray: #181818;
-    --black: #010400;
+
 }
 
 *
@@ -27,20 +24,16 @@ body {
     color: white;
     /* font-family: 'Bitter', serif;  */
     font-family: 'VT323', serif;
-    font-size: larger;
+    text-align: center;
+    font-size: 25px;
 }
 
 h1 {
     color: var(--brightgreen);
     font-family: 'VT323', serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
-}
-
-h1 a 
-{
-    color: var(--brightgreen);
 }
 
 h2 {
@@ -48,13 +41,14 @@ h2 {
     font-family: 'VT323', serif;
     text-align: Center;
     font-weight: bolder;
+    font-size: 40px;
     padding-top: 70px;
 }
 
 h3 {
     color: var(--brightgreen);
     font-family: 'VT323', serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
 }
 
@@ -63,13 +57,20 @@ li
     list-style: none;
 }
 
+#h_blue, #h_white, #h_green,
+#t_white, #t_green, #b_grey,
+#b_blue, #b_black
+{
+    cursor: pointer;
+}
+
 #checkbox_toggle
 {
     display: none;
 }
 
 #cursor {
-    font-size: 43px;
+    font-size: 60px;
     font-family: 'VT323', serif;
 }
 
@@ -152,11 +153,6 @@ li
 #contact_form {
     margin-bottom: 150px;
 }
-/* .main
-{
-    margin-right: 40px;
-    margin-bottom: 30px;
-} */
 
 #home {
     padding-top: 25px;
@@ -207,14 +203,12 @@ li
 /*------------------- NAVBAR ----------------------- */
 .nav-bar
 {
-    align-items: right;
     color: var(--brightgreen);
     font-family: 'VT323', serif;
     font-size: 24px;
-    justify-content: space-between;
     padding-left: 50px;
     user-select: none; 
-    border-bottom: 1px solid;
+    border-bottom: 1px dashed;
     position: sticky;
     background-color: black;
     width: 100%;
@@ -224,8 +218,8 @@ li
 
 .nav-items a 
 {
+    font-size: 28px;
     color: var(--brightgreen);
-    /* display: block; */
     padding: 8px;
     text-decoration: none;
     
@@ -239,10 +233,11 @@ li
 .menu 
 {
     display: flex;
-    align-content: left;
+    align-content: center;
     gap: 1em;
     font-size: 18px;
     padding-top: 15px;
+    justify-content: left;
     
 }
 
@@ -330,20 +325,41 @@ textarea{
     font-weight:  bold;
 }
 
-.power_button {
-    top:93%;
-    left:95%;
-    width:40px;
-    height:40px;
-    position: absolute;
-    z-index: 0;
-    border-radius: 50%;
-    background: orange; 
+.settings{
+    vertical-align: center;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 2;
+    top: 2;
+    width: 60%;
+    height: 50%;
+    overflow: auto;
+    background-color: blue;
+}
+.settings-content {
+    background-color: blue;
+    margin: 15% auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 80%;
 }
 
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* MOBILE DEVICE NAV BAR */
-@media (max-width: 865px) 
+@media (max-width: 768px) 
 {
     #sub_menu {
         display:none;
@@ -358,6 +374,7 @@ textarea{
         text-align: center;
         padding: 16px 0;
     }
+
     .menu li:hover 
     {
         width: 100%;
@@ -366,14 +383,13 @@ textarea{
         transition: 0.3s ease;
         color: black;
     }
+
     .nav-items a 
     {
-        color: var(--brightgreen);
-        /* display: block; */
         padding: 8px;
         text-decoration: none;
-        
     }
+
     .nav-items a:hover {
         color: black;
     }
@@ -388,10 +404,6 @@ textarea{
     }
     .crt {
         margin: auto;
-        background-color: va(--screen);
-        display: block;
-        border: 0px solid red;
-        border-radius: 0px;
         margin-top: 5px;
         width: 100%;
         height: 100vh;
@@ -401,7 +413,17 @@ textarea{
     #deco-crtbezel {
         display: none;
     }
+}
 
-
+@media (max-width: 942px)
+{
+    #sub_menu {
+        display:none;
+    }
+    
+    .menu 
+    {
+    justify-content: space-evenly;  
+    }
 }
 

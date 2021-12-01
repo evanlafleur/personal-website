@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;700&family=VT323&display=swap" rel="stylesheet">
     <link href ="css/styles.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/jpg" href="src/favicon/favicon.ico">
@@ -28,13 +27,14 @@
         </div>
         <div id="deco-crtbezel"> 
         </div>
-        <div class="crt">
+        
+        <div class="crt" id="crt_frame">
             <div class="nav-bar" id="navbar">
                 <ul class="nav-items">
                     <input type="checkbox" id="checkbox_toggle" />
                     <label for="checkbox_toggle" class="hamburger">&#9776; </label>
                     <div class="menu" >
-                        <li class="dropdown_menu" id="sub_menu"> &#9672; </li>
+                        <li id="settings_btn" > &#9672; </li>
                         <li> <a href="#about">About</a></li>
                         <li> <a href="#prev-work">Previous Work</a></li>
                         <li> <a href="#projects">Projects</a></li>
@@ -45,14 +45,29 @@
             <div class="container" id="content">
                 <br/>
                 <div id="home">
-                    <h1 style="text-align:center;"> Evan La Fleur <span id="cursor">|</span></h1>
-                    <h2> College Student @ Portland State University</h2>
-                    <!-- <h3> Computer Science Major</h3> -->
+                    <div class="settings" id="settings_panel">
+                        <div class="settings-content">
+                            <span class="close">&times;</span>
+                            <h2> Settings: </h2>
+                            <h3>Change Header Color:</h3>
+                                <span id="h_green">| Green</span>
+                                <span id="h_blue">| Blue |</span>
+                                <span id="h_white"> White |</span>
+                            <h3>Change Text Color: </h3>
+                                <span id="t_white">| White |</span>
+                                <span id="t_green"> Green |</span>
+                            <h3>Change Background Color:</h3>
+                                <span id="b_grey">| Grey |</span>
+                                <span id="b_blue"> Blue |</span>
+                                <span id="b_black"> Black |</span>
+                        </div>
+                    </div>
+                    <h1 id="name_test" style="text-align:center;"> Evan La Fleur <span id="cursor">|</span></h1>
+                    <h2 id="name_test" > College Student @ Portland State University</h2>
                 </div>
-
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 id="about">-----  About Me  -----</h2>
+                        <h2 class="header" id="about">-----  About Me  -----</h2>
                         Hi my name is Evan La Fleur. I am currently a student at Portland 
                         State and i am working towards my bachelors in Computer Science. Once 
                         I complete my undergrad I am looking at getting into the Cybersecurity 
@@ -73,7 +88,7 @@
                     <div class="col-md-12"> 
                         <div class="work-experience">
                             <div>
-                                <h3> Best Buy - Retail Supervisor </h3>
+                                <h3 id="work_name"> Best Buy - Retail Supervisor </h3>
                                 <p class="expand">
                                     <span>More Details</span>
                                 </p>
@@ -92,7 +107,7 @@
                                 </p>
                             </div>
                             <div>
-                                <h3> Sears Holding Corporation - Operations Manager </h3>
+                                <h3 id="work_name"> Sears Holding Corporation - Operations Manager </h3>
                                 <p class="expand2">
                                     <span>More Details </span>
                                 </p>
@@ -125,7 +140,7 @@
                         </h2>
                     </div>
                     <div class="col-md-6" id="project_item"> 
-                        <h3 style="text-align: center;">
+                        <h3 id="project_name" style="text-align: center;">
                             Robotics Control System
                         </h3>
                         <p class="short-desc"> 
@@ -135,7 +150,7 @@
                     </div>
 
                     <div class="col-md-6" id="project_item"> 
-                        <h3 style="text-align: center;">
+                        <h3 id="project_name" style="text-align: center;">
                             Algorithm Coding Examples
                         </h3>
                         <p class="short-desc"> 
@@ -144,7 +159,7 @@
                         <a class="button" id="projects_button" href="https://github.com/evanlafleur/CS350"> View </a>
                     </div>
                     <div class="col-md-12" id="project_item"> 
-                        <h3 style="text-align: center;">
+                        <h3 id="project_name" style="text-align: center;">
                             Personal Website
                         </h3>
                         <p class="short-desc"> 

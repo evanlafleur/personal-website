@@ -132,5 +132,20 @@ Things to to:
     + Special Interests
 - add console log of contact us form
 
+--- November 29 ---
+For today my goal was to start filling in the empty spaces on my webpage. The main sectinon worked on was the projects section. I removed my place holders and 
+began to fill them with projects from my github.
+
+--- November 30 ---
+As I come up upon the last day I have till my project is due, i began by looking at my list and my project as a whole and started to decide what i wanted to 
+accomplish. I started by trying to make expandable divs, this was a pretty hard thing to figure out, as i had to find a way to make a item in question open 
+and close without affecting the other components. I originally tried to do this without implementing javascript but was having no luck. I ran across this tutorial 
+https://www.w3schools.com/howto/howto_js_collapsible.asp and i was able to successfully find a way to make a collapsible div. 
+
+One problem i ran into was that when i added more than one collapsible div there was a problem in which all the divs would open and close at once. To solve 
+this problem for now I had to duplicate the class in the function and basically create a different class name so they dont work at the same time. In the future I plan
+to implement a index of sorts so it would automatically do this based off the index.
+
+
 
 

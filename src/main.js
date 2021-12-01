@@ -44,21 +44,6 @@ function validate() {
 
 };
 
-var $form = $('form#contact-me'),
-    url = 'https://script.google.com/a/macros/pdx.edu/s/AKfycbwXjl2q0WMaqraDrZIfZ7cSxBwCKiirinnQg4S0jFiLs9lYb2DA7y8_NTRPtm7qKSt-BA/exec'
-
-    $('#dubmit-data').on('click', function(e) {
-        e.preventDefault();
-        var jqxhr = $.ajax({
-            url: url,
-            method: "GET",
-            dataType: "json",
-            data: $form.serializeObject()
-        }).success (
-
-        )
-    })
-
 $(document).ready(function () {
     $(".work-experience .expand").click(function () {
         $(".work-experience .expand").css("display", "none");
@@ -84,3 +69,101 @@ $(document).ready(function () {
         $(".work-experience .more_details2").css("display", "none");
     });
 });
+
+window.onload = function(){
+var settings_modal = document.getElementById("settings_panel");
+var btn = document.getElementById("settings_btn");
+var span = document.getElementsByClassName("close")[0];
+
+var b_header = document.getElementById("h_blue");
+var w_header = document.getElementById("h_white");
+var g_header = document.getElementById("h_green");
+var w_text = document.getElementById("t_white");
+var g_text = document.getElementById("t_green");
+var g_background = document.getElementById("b_grey");
+var b_background = document.getElementById("b_blue");
+var blk_background = document.getElementById("b_black");
+var h1Element = document.getElementsByTagName("h1");
+var h2Element = document.getElementsByTagName("h2");
+var h3Element = document.getElementsByTagName("h3");
+var bodyElement = document.getElementsByTagName("body");
+
+    b_header.onclick = function(){
+        console.log("Setting Header Color to: BLUE");
+        for(var i = 0; i < h1Element.length; ++i){
+            h1Element[i].style.color = "blue";
+        }
+        for(var i = 0; i < h2Element.length; ++i){
+            h2Element[i].style.color = "blue";
+        }
+        for(var i = 0; i < h3Element.length; ++i){
+            h3Element[i].style.color = "blue";
+        }
+    }
+
+    g_header.onclick = function(){
+        console.log("Setting Header Color to: GREEN");
+        for(var i = 0; i < h1Element.length; ++i){
+            h1Element[i].style.color = "#1eff3c";
+        }
+        for(var i = 0; i < h2Element.length; ++i){
+            h2Element[i].style.color = "#1eff3c";
+        }
+        for(var i = 0; i < h3Element.length; ++i){
+            h3Element[i].style.color = "#1eff3c";
+        }
+    }
+
+    w_header.onclick = function() {
+        console.log("Setting Header Color to: WHITE");    
+        for(var i = 0; i < h1Element.length; ++i){
+            h1Element[i].style.color = "white";
+        }
+        for(var i = 0; i < h2Element.length; ++i){
+            h2Element[i].style.color = "white";
+        }
+        for(var i = 0; i < h3Element.length; ++i){
+            h3Element[i].style.color = "white";
+        }
+    }
+
+    g_text.onclick = function() {
+        console.log("Setting Text Color to: GREEN");
+        for(var i = 0; i < bodyElement.length; ++i){
+            bodyElement[i].style.color = "#1eff3c";
+        }
+    }
+    w_text.onclick = function() {
+        console.log("Setting Text Color to: WHITE");
+        for(var i = 0; i < bodyElement.length; ++i){
+            bodyElement[i].style.color = "white";
+        }
+    }
+
+    g_background.onclick = function() {
+        console.log("Setting CRT Color to: GREY");
+        document.getElementById("crt_frame").style.backgroundColor= "#3d3d3d";
+    }
+    b_background.onclick = function() {
+        console.log("Setting CRT Color to: BLUE");
+        document.getElementById("crt_frame").style.backgroundColor = "#0057bb";
+    }
+    blk_background.onclick = function() {
+        console.log("Setting CRT Color to: BLACK");
+        document.getElementById("crt_frame").style.backgroundColor = "black";
+    }
+    
+    btn.onclick = function() {
+        settings_modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        settings_modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if ( event.target == settings_modal) {
+            settings_modal.style.display = "none";
+        }
+    }
+}
