@@ -1,0 +1,151 @@
+------------ October 26th --------------
+The Beginning of the Journey...
+
+I set out on the journey of making a personal website for CS410. 
+This wouldnt be the first personal website I have create but I really
+wanted to make it something I am proud of and want to share with others.
+
+I began by figuring out what I wanted my webpage to look like. I chose my 
+color scheme and basic layout and begin to create a barebones webpage.
+
+Since I am wanting to go into Cybersecurity, i wanted to go for a very simple
+monotype based webpage. Although it is a very simple plan, it can be hard to visually 
+nail down and make perfect. I plan to use bootstrap or CSS grids at the moment
+to allow compatibility in different browser sizes. But this will be for a later day. 
+
+When choosing my colors, i used https://coolors.co/ to ensure the colors 
+would look good together and also that they were accessible for people who
+are color blind. This site will show you what the site looks like for the many
+different types of color blindness and it really helped me better visualize it. 
+Since I was going for a hackereque look I could have gone with the basic black and 
+green like most webpages I have seen to basically mimic a terminal window. But 
+instead i chose to add a personal touch of using my favorite color, blue, and then 
+made the background a softer dark grey. This should open the webpage up a bit more in
+terms of viewing. 
+
+In the future, I have though about the potential to add a light/dark mode since 
+this has been a very popular trend recently with the most recent OS on both mac and PC, 
+but i have not quite looked into how to implement this. I assume it will involve JS or React. 
+
+After picking the colors and having a general idea of a them, i created a bare barebones
+html webpage and made sure it was functional. I then continued by adding a css page and added
+font that i chose from googles open source font webpage as well as added my colors as variables
+in the stylesheet. 
+
+I then began to tackle the task of a basic nav bar. 
+
+------------ November 4th --------------
+I began the task of the Navbar today. I first wanted to figure out how to figure out how a typcial
+hamburger menu would work. After viewing multiple different sites, i found that there is a way to 
+use a checkbox and basically hide and expand a menu by simply clicking the "hidden Checkbox". I 
+viewed the following for guidance on this matter:
+https://css-tricks.com/the-checkbox-hack/
+
+My next task is to determine whether I am wanting to use a flexbox, css grid or bootstrap. I am 
+thinking that i will use a CSS grid since it allows great flexibility on the layout of the overall 
+page. 
+
+While designing my layout I decided to remove the independant Home button from the navbar and move 
+it to use my name as the home button. 
+
+Now back to the grid... I plan on using a layout similar to the following:
+grid-template-areas: 
+    "About About About About"
+    "Previous-Work-1 Previous-Work-1 Previous-Work Previous-Work"
+    "Projects Projects Projects Projects"
+    "Contact Contact Contact Contact"; 
+This grid is subject to change but currently this is how it will be laid out in 
+desktop mode. 
+
+After Adding the grid I have noticed that in tablet mode the menu will block some of the text on 
+clicking the hamburger. I will need to look into this to determine if there is a way to offeset on click.
+
+-- November 19---
+Today I decided i wanted to make my page look more vintage by making it look like an old imac screen.
+To do so i created a div that will be smaller than the webpage and this will display my webpage.
+
+I started by determing how to make box that only display the amount of text which is on the screen. 
+I noticed that i am also going to need to put some extra work in to make sure this is responsive to different screensizes.
+This was where i began to notice that i will need to go back to the drawing board on the size in which i chsoe for my 
+bootstrap. I say this because the page does not resize properly when going from 1024px to 414px. I decided that I am going to 
+make a simplified version of the website for mobile standards. This will basically get rid of the deco frame in which i created
+to make it look like a old mac.
+
+--- November 20 ---
+My next step was to begin filling my webpage with content since I have gotten it prety close to how i want it to look.
+I started with the previous work section, first i added a button so you can download my resume, i am still thinking if i wanna
+develop a window that will popup and present my resume or if i just wanna make it downloadable. For now downloadable is a good start.
+
+I ran into a problem when trying to use unorganized and organized lists in this section. I found that i was not getting any numbers
+or any bullets displayed onto the page with the text. I then realized globally set lists to not display bullets because of the way i 
+set up my main menu. To solve this i assigned a id to the list so i can control just this list.
+
+The resume was added and I chose to host the pdf through my google drive since it has a built in pdf viewer and will give the personal
+the option to download the pdf if they want versus requiring someone to download it every time they click the button. 
+
+--- November 21 --
+Today, I changed the look around on my webpage once again... It was not as responsive as i had wanted it so i started by removing a few of the
+deco peices and instead decided to just make it look like a old generic crt monitor instead of a mac classic like i originally planned.
+I also decided to move the menubar down onto the CRT and make it look like its part of the operating system. I did this because i plan to add a 
+screen flicker when i complete the actual content on my website and i wanted to make a way for the user to turn it off if they did not want the 'crt effect'.
+
+I attached a few articles i used to aid in my setting up of a sticky menu as well as my research into how to make a sub menu in the naviation bar.
+https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+https://www.w3schools.com/howto/howto_css_subnav.asp
+
+One of my biggest challenges today was trying to make a sticky item inside of my scrollable div. I found a way to do it in the end, this was found by lots 
+of trial in error with various css code until i was able to not only make it sticky but also set it to the front of all the layers with a z-index of 9999.
+
+--- November 22 ---
+Today was a pretty short day for working on this website, the main that that was done was adjusting the padding so the anchors on my page would take into account the 
+menu bar. I did so by adjusting the top padding for the h2 heading.
+
+--- November 25 ---
+Today i tackled the contact form, my plan was to just make a very simple and easy to fillout contact form. 
+I also wanted to make some sort of error tracking, ie. name doesnt get entered.  I was able to find a way to do so by
+using javascript to collect the data from the form and validate that there was actually data in that field. 
+After completing this form and layout i tried a few different things but i was unable to find a way to actually link this to 
+my email so i would actually receive the contact form data. I am hoping to go back to this at some point once i find a plugin or 
+have time to dig through my old php book from highschool. 
+
+--- November 26 ---
+Today i mainly just made a small "success" banner. So when a survey is filled out correctly, I pass a string of words 
+from JS to the main html file to allow the users to know their form has been submitted. I added a time delay to this to allow
+plenty of time to read the notice.
+
+--- Novemeber 28 --- 
+I am getting close to being done and having a presentable webpage. Today i moved the outer display bezel from the background into its own div to account for 
+a more realistic CRT monitor. I also attempted to add a effect of a CRT monitor turning on and off but had no luck as the CSS i found online for animations was
+a bit too advanced for me to figure out and after an hour or so of messing with it, it was not turning out how i would like. Since i am running out of time i chose
+to scrap this for now. I now just have a few things left i would like to accomplish before
+deploying to the web.
+
+Things to to:
+- finish sub menu on main menu bar
+    + Add some options to do things like change color or text, etc.
+- adjust colors for mobile menu
+- fix the mobile menu and how it shows up and dissapears
+- adjust some of the responsive media settings
+- finish up the projects category
+- add an expertise areas   
+    + Language specialties
+    + Special Interests
+- add console log of contact us form
+
+--- November 29 ---
+For today my goal was to start filling in the empty spaces on my webpage. The main sectinon worked on was the projects section. I removed my place holders and 
+began to fill them with projects from my github.
+
+--- November 30 ---
+As I come up upon the last day I have till my project is due, i began by looking at my list and my project as a whole and started to decide what i wanted to 
+accomplish. I started by trying to make expandable divs, this was a pretty hard thing to figure out, as i had to find a way to make a item in question open 
+and close without affecting the other components. I originally tried to do this without implementing javascript but was having no luck. I ran across this tutorial 
+https://www.w3schools.com/howto/howto_js_collapsible.asp and i was able to successfully find a way to make a collapsible div. 
+
+One problem i ran into was that when i added more than one collapsible div there was a problem in which all the divs would open and close at once. To solve 
+this problem for now I had to duplicate the class in the function and basically create a different class name so they dont work at the same time. In the future I plan
+to implement a index of sorts so it would automatically do this based off the index.
+
+
+
+
