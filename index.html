@@ -1,0 +1,245 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head> 
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name ="description" content="Professional Development website about Evan La Fleur"/>
+    <meta name ="author" content="Evan La Fleur"/>
+
+    <title> Evans Website </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;700&family=VT323&display=swap" rel="stylesheet">
+    <link href ="css/styles.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="src/favicon/favicon.ico">
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src ="src/main.js"></script>
+</head>
+<body id="top">
+    <a name="top"></a>
+    <div class="content-wrapper">
+        <div id="deco-crtframe">
+        </div>
+        <div id="deco-crtbezel"> 
+        </div>
+        
+        <div class="crt" id="crt_frame">
+            <div class="nav-bar" id="navbar" aria-label="Navigation Bar for webpage" >
+                <ul class="nav-items">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776; </label>
+                    <div class="menu" >
+                        <li><a href="#home"> &#9672; </a></li>
+                        <li> <a href="#about">About</a> </li>
+                        <li> <a href="#prev-work">Previous Work</a></li>
+                        <li> <a href="#projects">Projects</a> </li>
+                        <li> <a href="#contact">Contact</a> </li>
+                        <li id="settings_btn" > <a href="#home"> Settings</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="container" id="content">
+                <br/>
+                <div id="home" aria-label="Home section" >
+                    <div class="settings" id="settings_panel" aria-label="Settings Menu" >
+                        <div class="settings-content">
+                            <span class="close">&times;</span>
+                            <h2> Settings: </h2>
+                            <h3 >Change Header Color:</h3>
+                                <span id="h_green">| Green</span>
+                                <span id="h_blue">| Blue |</span>
+                                <span id="h_white"> White |</span>
+                            <h3 >Change Text Color: </h3>
+                                <span id="t_white">| White |</span>
+                                <span id="t_green"> Green |</span>
+                            <h3 >Change Background Color:</h3>
+                                <span id="b_grey">| Grey |</span>
+                                <span id="b_blue"> Blue |</span>
+                                <span id="b_black"> Black |</span>
+                        </div>
+                    </div>
+                    <h1 id="name_test" style="text-align:center;"> Evan La Fleur <span id="cursor">|</span></h1>
+                    <h2 id="name_test" > College Student at Portland State University</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="header" id="about" aria-label="About me description" >
+                            -----  About Me  -----
+                        </h2>
+                        Hi, my name is Evan La Fleur. I am currently a student at Portland State, 
+                        and I am working towards my bachelor's in Computer Science. Once I complete 
+                        my undergrad, I am looking to get into the Cybersecurity field, particularly 
+                        penetration testing and web application development/security. I currently take 
+                        on small contract jobs with start-up companies to help assess needs in terms of 
+                        securing their website and applications. If you have any questions or would like 
+                        to collaborate on something, don't hesitate to reach out!
+                    </div>
+                </div>
+
+                <div class="row Previous Work">
+                    <div class="col-md-12">  
+                        <h2 id="prev-work" aria-label="Previous Work for me" > 
+                            ----- Previous Work ----- 
+                        </h2>
+                    </div>
+                    
+                    <div class="col-md-12"> 
+                        <div class="work-experience">
+                            <div>
+                                <h3 id="work_name"> Best Buy - Retail Supervisor </h3>
+                                <p class="expand">
+                                    <span> [ More Details ] </span>
+                                </p>
+                                <div class="more_details"style="display: none">
+                                    <hr>
+                                    <ul>
+                                        <li id="project"> 
+                                            Assisted in running a client obsessed business model, while coaching and working with a small team of technicians to provide an overall world-class experience. 
+                                        </li>
+                                        <li id="project"> 
+                                            Utilize employee and Client feedback, scorecards, and financial results to review the business. Works with the leaders to build and implement business support plans to better capitalize on business opportunities.
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                </div>
+                                <p class="detract" style="display: none">
+                                    <span class="direction">Close Details</span>
+                                </p>
+                            </div>
+                            <div>
+                                <h3 id="work_name"> Sears Holding Corporation - Operations Manager </h3>
+                                <p class="expand2">
+                                    <span> [ More Details ] </span>
+                                </p>
+                                <div class="more_details2"style="display:none">
+                                    <hr>
+                                    <ul>
+                                        <li id="project"> 
+                                            Managed Backroom process and execution for business unit in excess of 20M annually.
+                                        </li>
+                                        <li id="project">
+                                            Facilitated effective coaching skills for developing and managing associates. 
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                </div>
+
+                                <p class="detract2" style="display: none">
+                                    <span class="direction">Close Details</span>
+                                </p>
+                            </div>
+                            <a class="button" id="resume_button" href="https://drive.google.com/file/d/1wQOok0NqA324uH0vq77R7-kLUmGoXNWw/view?usp=sharing">
+                                View Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row Projects">
+                    <div class="col-md-12"> 
+                        <h2 id="projects" aria-label="Recent Projects" > 
+                            ----- Projects ----- 
+                        </h2>
+                    </div>
+                    <div class="col-md-6" id="project_item"> 
+                        <h3 id="project_name" style="text-align: center;">
+                            Robotics Control System
+                        </h3>
+                        <p class="short-desc"> 
+                            A python gui that tranlates joystick commands and translates them into code for a under water robot.
+                        </p>
+                        <a class="button" id="projects_button" href="https://github.com/evanlafleur/Laveer-Enterprises/" >View </a>
+                    </div>
+
+                    <div class="col-md-6" id="project_item"> 
+                        <h3 id="project_name" style="text-align: center;">
+                            Algorithm Coding Examples
+                        </h3>
+                        <p class="short-desc"> 
+                            This repository contains code from my Algorithms class(CS350) from Portland State University.
+                        </p>
+                        <a class="button" id="projects_button" href="https://github.com/evanlafleur/CS350"> View </a>
+                    </div>
+                    <div class="col-md-12" id="project_item"> 
+                        <h3 id="project_name" style="text-align: center;">
+                            Personal Website
+                        </h3>
+                        <p class="short-desc"> 
+                            Source code for this website which was developed from scratch using a variety of HTML, CSS and some Javascript.
+                        </p>
+                        <a class="button" id="projects_button" href="https://github.com/evanlafleur/personal-website"> View </a>
+                    </div>
+
+                        
+                </div>
+                    
+                <div class="row Contact">
+                    <div class="col-md-12 col-lg-12"> 
+                        <h2 id='contact' aria-label="Contact Form to reach me" > 
+                            ----- Contact Me ----- 
+                        </h2>
+                    </div>
+                    <div class="col-md-12 col-lg-12" id='contact_form'> 
+                        <form id="contact-me" name ="contactMe" onsubmit="return validate()">
+                            <table class="form-style">
+                                <tr>
+                                    <td>
+                                        <label for="name">
+                                            Name:
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input id="name" type="text" name="name" class="long"/>
+                                        <span class="error" id="errorname"> </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="email"> Email Address: </label>
+                                    </td>
+                                    <td>
+                                        <input id="email" type="email" label = "email field" name="email" class="long" />
+                                        <span class="error" id="erroremail"> </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="txtarea"> Message: </label>
+                                    </td>
+                                    <td>
+                                        <textarea id="txtarea" name="message" class="long field-textarea"></textarea>
+                                        <span class="error" id="errormsg"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input id="submit-data" type="submit" value="Send">
+                                        <input type="reset" value="Reset">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex-center"> 
+                    <button aria-label="Github Profile Link" style="background: none; border: none;" onclick="location.href='https://github.com/evanlafleur';">
+                        <i class="fa fa-github fa-4x icon-3d"></i>
+                    </button>
+                    <button aria-label="Linked-in Profile Link" style="background: none; border: none;" onclick="location.href='https://linkedin.com/in/evan-lafleur/';">
+                        <i class="fa fa-linkedin fa-4x icon-3d"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+
+</html>
